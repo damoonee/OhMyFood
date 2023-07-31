@@ -1,4 +1,4 @@
-body, html {
+body, html, * {
   margin: 0;
   font-family: "roboto", sans-serif;
 }
@@ -41,26 +41,25 @@ body, html {
   line-height: normal;
 }
 
-.decouvrire {
-  padding: 32px;
+.decouvrir {
+  padding: 39px 32px 57px;
   text-align: center;
   background-color: #fafafa;
 }
-.decouvrire .decouvrire-title {
+.decouvrir .decouvrir-title {
   color: #000;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 14px;
 }
-.decouvrire .decouvrire-subtitle {
+.decouvrir .decouvrir-subtitle {
   color: var(--grey, #353535);
-  font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
-.decouvrire .decouvrire-btn {
+.decouvrir .decouvrir-btn {
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 25px;
@@ -70,8 +69,62 @@ body, html {
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   transition-duration: 0.25s;
+  border: none;
 }
-.decouvrire .decouvrire-btn:hover {
+.decouvrir .decouvrir-btn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.tuto {
+  margin: auto;
+}
+.tuto .tuto-title {
+  padding: 48px 80px 26px 20px;
+  height: 31px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.tuto .tuto-etapes {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: compteListe;
+}
+.tuto .tuto-icone::before {
+  width: 13.019px;
+  height: 19.903px;
+  display: flex;
+  padding: 24.54px 276px 27.93px 33.47px;
+  color: #7E7E7E;
+}
+.tuto .texte {
+  display: flex;
+  justify-content: center;
+  margin-top: -48px;
+}
+.tuto .tuto-etape {
+  height: 72.379px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: var(--background, #F6F6F6);
+  margin: 0 20px 25px 32.51px;
+  position: relative;
+}
+.tuto .tuto-etape::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356dc;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  left: -30px;
+  margin: 20.86px 21.98px 21.52px 20px;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
