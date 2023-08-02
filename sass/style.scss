@@ -1,6 +1,6 @@
 body, html, * {
     margin: 0;
-    font-family: 'roboto' , sans-serif;
+    font-family: 'Roboto' , sans-serif;
 }
 
 .header {
@@ -85,7 +85,8 @@ body, html, * {
 
 .tuto {   
     margin: auto;
-    
+    padding-bottom: 68px;
+
     .tuto-title {
         padding: 48px 80px 26px 20px;
         height: 31px;
@@ -114,6 +115,7 @@ body, html, * {
         display: flex;
         justify-content: center;
         margin-top: -48px;
+        font-weight: bold;
     }
         
     .tuto-etape {
@@ -142,3 +144,123 @@ body, html, * {
     }
 }
 
+.restaurants {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;  
+    padding: 0 18px 18px 17px ;
+
+    .restaurant-title {
+        padding: 54px 80px 48px 20px;
+    }
+
+    .cards {
+        margin-bottom: 18px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .card-img {
+        height: 151px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .card-nouveau {
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 10px;
+        position: absolute;
+        top: 16px;
+        right: 12px;
+    }
+
+    .card-content {
+        height: 77px;
+        position: relative;
+    }
+
+    i {
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        padding: 23px 25px 33px 13px;
+        width: 22px;
+        height: 21px;
+    }
+
+    .fa-solid {
+        color: transparent;
+        color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: transform 300ms, -webkit-transform 300ms;
+        transform: scale(0);
+
+        &:hover::before {
+            opacity: 1;
+            color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+        }
+    }
+
+    
+
+    .card-title {
+        height: 20px;
+        padding: 16px 60px 5px 13px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .card-subtitle {
+        height: 24px;
+        padding: 5px 80px 12px 13px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    
+}
+
+.container-footer {
+    background: var(--grey, #353535);
+    display: flex;
+    padding: 22px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .footer-list {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        color: var(--white, #FFF);
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .lien {
+        text-decoration-line: none;
+        color: #FFF;
+    }
+
+    .footer-logo {
+        color: var(--white, #FFF);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
