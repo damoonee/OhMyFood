@@ -11,6 +11,8 @@ body, html, * {
     padding: 14px 89px 13px 89px;
     position: relative;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    z-index: 10;
 
     .header-logo {
         margin: 0;
@@ -200,17 +202,11 @@ body, html, * {
 
     .fa-solid {
         color: transparent;
-        color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+        background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        opacity: 0;
         transition: transform 300ms, -webkit-transform 300ms;
         transform: scale(0);
-
-        &:hover::before {
-            opacity: 1;
-            color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-        }
     }
 
     
@@ -250,6 +246,7 @@ body, html, * {
         display: flex;
         flex-direction: column;
         gap: 7px;
+        cursor: pointer;
     }
 
     .lien {

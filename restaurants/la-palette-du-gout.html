@@ -3,12 +3,139 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device_width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OhMyFood - La palette du goût</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/menu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <p>La palette du goût</p>
+        <header class="header">
+            <div class="header-logo">
+                <img src="../assets/img/logo/ohmyfood@2x.svg" alt="OhMyFood">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        </header>
+        
+
+        <main class="menu">
+            <img src="../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt class="photo-menu">
+            <div class="menu-restaurant">
+                <h2 class="menu-title">La palette du goût</h2>
+                <i class="fa-regular fa-heart"></i>
+
+                <section class="menu-section">
+                    <h3 class="etape-menu">Entrées</h3>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Fricassée d'escargots</h4>
+                        <p class="entrees-description">Au piment d'Espelette</p>
+                        <div class="menu-prix">25€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Foie gras de canard mi-cuit</h4>
+                        <p class="entrees-description">Et ses copeaux de truffe noire</p>
+                        <div class="menu-prix">35€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Œuf au plat</h4>
+                        <p class="entrees-description">Assaisonné à la truffe sur lit de caviar</p>
+                        <div class="menu-prix">20€</div>
+                    </div>
+                </section>
+
+                <section class="menu-section">
+                    <h3 class="etape-menu">Plats</h3>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Filet de bœuf aux herbes</h4>
+                        <p class="entrees-description">Accompagné de sa ribambelle de légumes</p>
+                        <div class="menu-prix">40€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Parmentier de queue de bœuf</h4>
+                        <p class="entrees-description">À la truffe noire sur sa purée de panais</p>
+                        <div class="menu-prix">35€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Filet de turbot</h4>
+                        <p class="entrees-description">Aux agrumes</p>
+                        <div class="menu-prix">44€</div>
+                    </div>
+                </section>
+
+                <section class="menu-section">
+                    <h3 class="etape-menu">Desserts</h3>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Paris-Brest</h4>
+                        <p class="entrees-description">Revisité</p>
+                        <div class="menu-prix">18€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Macaron au chocolat d'exception </h4>
+                        <p class="entrees-description">Et glace à la vanille de Madagascar</p>
+                        <div class="menu-prix">22€</div>
+                    </div>
+
+                    <div class="card-plat">
+                        <h4 class="entrees-title">Mousse au chocolat </h4>
+                        <p class="entrees-description">Au piment d'Espelette et à la truffe noire</p>
+                        <div class="menu-prix">23€</div>
+                    </div>
+                </section>
+
+                <div class="commande">
+                    <button class="commander-btn">Commander</button>
+                </div>
+
+                </div>
+
+            </main>
+
+            <footer class="footer">
+                <div class="container-footer">
+                    <a class="footer-logo">ohmyfood</a>
+    
+                        <ul class="footer-list">
+                            <li>
+                                <a>
+                                    <i class="fa-solid fa-utensils"></i>
+                                    Proposer un restaurant
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a>
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                    Devenir partenaire
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a>
+                                    Mentions légales
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="mailto:contact@ohmyfood.com" class="lien">Contact</a>
+                            </li>
+                        </ul>
+                    
+                </div>
+            </footer>
     </body>
     
 </html>
