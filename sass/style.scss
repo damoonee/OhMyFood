@@ -205,13 +205,19 @@ body, html, * {
         background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        transition: transform 300ms, -webkit-transform 300ms;
+        transition: transform 300ms;
         transform: scale(0);
     }
 
-    
+    .btn-heart:active {
+        .fa-solid {
+            background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+            transform: scale(1);
+        }
+    }
 
-    .card-title {
+
+      .card-title {
         height: 20px;
         padding: 16px 60px 5px 13px;
         font-size: 18px;
@@ -260,4 +266,40 @@ body, html, * {
         font-size: 18px;
         font-weight: 400;
     }
+}
+
+@media (min-width: 1440px) {
+
+    .decouvrir-title {
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 40px;
+    }
+
+    .decouvrir-title br {
+        display: none;
+    }
+
+    .tuto {
+        padding: 50px 180px;
+
+        .tuto-etapes {
+            flex-direction: row;
+        }
+    
+    }
+
+    
+    .restaurants {
+        display: flex;
+        padding: 0px 180px;
+        gap: 28px;
+    }
+
+    .cards {
+        height: 251px;
+        flex: 1 0 0;
+    }
+    
 }

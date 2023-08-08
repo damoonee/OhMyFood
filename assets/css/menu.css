@@ -4,6 +4,8 @@
   bottom: 10px;
   padding: 14px 89px 13px 17px;
   cursor: pointer;
+  text-decoration: none;
+  color: #353535;
 }
 
 main .photo-menu {
@@ -122,4 +124,32 @@ main .photo-menu {
 .commande .commander-btn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1440px) {
+  .menu-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-restaurant {
+    width: 1055px;
+    height: 1221px;
+    flex-shrink: 0;
+    margin: -60px 192px 0px 193px;
+  }
+  .card-plat {
+    left: 186px;
+    position: relative;
+    width: 65%;
+  }
+  .etape-menu {
+    right: -195px;
+  }
+  .menu-title {
+    text-align: center;
+  }
+  .menu-restaurant i {
+    right: 300px;
+  }
 }/*# sourceMappingURL=menu.css.map */
