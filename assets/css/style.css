@@ -144,6 +144,9 @@ body, html, * {
 }
 .restaurants .cards {
   margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .restaurants .card {
   background-color: #fff;
@@ -189,8 +192,8 @@ body, html, * {
   transition: transform 300ms;
   transform: scale(0);
 }
-.restaurants .btn-heart:active .fa-solid {
-  background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+.restaurants .btn-heart:hover .fa-solid {
+  background-image: linear-gradient(180deg, #9356dc #ff79da 100%);
   transform: scale(1);
 }
 .restaurants .card-title {
@@ -258,8 +261,28 @@ body, html, * {
     padding: 0px 180px;
     gap: 28px;
   }
-  .cards {
-    height: 251px;
-    flex: 1 0 0;
+  .restaurants .restaurant-title {
+    padding: 30px 80px 0px 20px;
+  }
+  .restaurants .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
   }
 }/*# sourceMappingURL=style.css.map */

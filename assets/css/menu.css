@@ -126,6 +126,21 @@ main .photo-menu {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 768px) {
+  .menu-restaurant {
+    height: 1062px;
+    margin: -60px 90px 0px 90px;
+    padding-bottom: 120px;
+  }
+  .menu-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-title {
+    text-align: center;
+  }
+}
 @media (min-width: 1440px) {
   .menu-section {
     width: 100%;
@@ -134,9 +149,10 @@ main .photo-menu {
   }
   .menu-restaurant {
     width: 1055px;
-    height: 1221px;
+    height: 1062px;
     flex-shrink: 0;
     margin: -60px 192px 0px 193px;
+    padding-bottom: 120px;
   }
   .card-plat {
     left: 186px;
