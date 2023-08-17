@@ -93,11 +93,41 @@ main {
     .card-plat {
         border-radius: 15px;
         background: white;
-        height: 69px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;;
+        padding: 15px;
         box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+        position: relative;
+        overflow: hidden;
+        transition: padding 0.2s ease-in;
+
+        .validation {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 60px;
+            background-color: #99E2D0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            // Pour l'animation
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 0.2s ease-in;
+
+            i {
+                color: white;
+                font-size: 22px;
+            }
+        }
+
+        &:hover {
+            padding-right: 75px;
+
+            .validation {
+                transform: scale(1, 1);
+            }
+        }
     }
 
     .entrees-title {
@@ -105,7 +135,7 @@ main {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 500;
-        padding: 15px 15px 0px 15px;
+        margin-bottom: 5px;
     }
 
     .entrees-description {
@@ -113,7 +143,7 @@ main {
         font-family: Roboto;
         font-size: 15.043px;
         font-weight: 300;
-        padding: 0px 0px 15px 15px;
+        position: relative;
     }
 
     .menu-prix {
@@ -122,11 +152,8 @@ main {
         font-family: Roboto;
         font-size: 15.043px;
         font-weight: 700;
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 15px 15px 0;
-        position: relative;
-        top: -39px;
+        position: absolute;
+        right: 0;
     }
 
 }
@@ -174,7 +201,7 @@ main {
         }
 
         .menu-section {
-            width: 100%;
+            width: 75%;
             margin-left: auto;
             margin-right: auto;
         }

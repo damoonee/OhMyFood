@@ -80,25 +80,49 @@ main .photo-menu {
 .menu-section .card-plat {
   border-radius: 15px;
   background: white;
-  height: 69px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  padding: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: padding 0.2s ease-in;
+}
+.menu-section .card-plat .validation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 0.2s ease-in;
+}
+.menu-section .card-plat .validation i {
+  color: white;
+  font-size: 22px;
+}
+.menu-section .card-plat:hover {
+  padding-right: 75px;
+}
+.menu-section .card-plat:hover .validation {
+  transform: scale(1, 1);
 }
 .menu-section .entrees-title {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
-  padding: 15px 15px 0px 15px;
+  margin-bottom: 5px;
 }
 .menu-section .entrees-description {
   color: #000;
   font-family: Roboto;
   font-size: 15.043px;
   font-weight: 300;
-  padding: 0px 0px 15px 15px;
+  position: relative;
 }
 .menu-section .menu-prix {
   color: #353535;
@@ -106,11 +130,8 @@ main .photo-menu {
   font-family: Roboto;
   font-size: 15.043px;
   font-weight: 700;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 15px 15px 0;
-  position: relative;
-  top: -39px;
+  position: absolute;
+  right: 0;
 }
 
 .commande {
@@ -151,7 +172,7 @@ main .photo-menu {
     text-align: center;
   }
   .menu-restaurant .menu-section {
-    width: 100%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
   }

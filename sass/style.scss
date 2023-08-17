@@ -1,6 +1,8 @@
 body, html, * {
     margin: 0;
     font-family: 'Roboto' , sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .header {
@@ -191,18 +193,18 @@ body, html, * {
     .card-content {
         height: 77px;
         position: relative;
+        padding: 15px;
     }
 
     .card-title {
         height: 20px;
-        padding: 16px 60px 5px 13px;
         font-size: 18px;
         font-weight: 700;
+        margin-bottom: 5px;
     }
 
     .card-subtitle {
         height: 24px;
-        padding: 5px 80px 12px 13px;
         font-size: 17px;
         font-weight: 300;
     }
@@ -214,11 +216,8 @@ body, html, * {
     i {
         font-size: 30px;
         position: absolute;
-        right: 10px;
-        top: 0;
-        padding: 23px 25px 33px 13px;
-        width: 22px;
-        height: 28px;
+        right: 20px;
+        top: 20px;
     }
 
     .fa-solid {
@@ -314,6 +313,18 @@ body, html, * {
 
     .card {
         width: 45%;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        align-items: center;
+
+        .footer-list {
+            flex-direction: row;
+            gap: 24px;
+        }
     }
 
     
