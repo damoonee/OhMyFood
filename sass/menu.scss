@@ -1,3 +1,17 @@
+body {
+    animation: page 0.8s linear;
+}
+
+@keyframes page {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
 .header i {
     position: absolute;
     left: 20px;
@@ -7,7 +21,6 @@
     text-decoration: none;
     color: #353535;
 }
-
 
 
 main {
