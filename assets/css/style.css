@@ -242,7 +242,7 @@ body, html, * {
   transform: scale(0);
 }
 .btn-heart:hover .fa-solid {
-  background-image: linear-gradient(180deg, #9356dc #ff79da 100%);
+  background-image: linear-gradient(180deg, #9356dc, #ff79da 100%);
   transform: scale(1);
 }
 
