@@ -135,6 +135,9 @@ body, html, * {
   list-style-type: none;
   counter-reset: compteListe;
 }
+.tuto .tuto-etape .fa-store::before {
+  color: #9356DC;
+}
 .tuto .tuto-icone::before {
   width: 13.019px;
   height: 19.903px;

@@ -124,6 +124,8 @@ body, html, * {
     }
 }
 
+
+
 .tuto {   
     margin: auto;
     padding-bottom: 68px;
@@ -145,6 +147,12 @@ body, html, * {
         padding: 0;
         list-style-type: none;
         counter-reset: compteListe;
+    }
+
+    .tuto-etape {
+        .fa-store::before {
+            color: #9356DC;
+        }
     }
 
     .tuto-icone::before {
